@@ -7,25 +7,9 @@ public class TestProducto {
 		Producto productoB;
 		Producto productoC;
 		
-		productoA=new Producto();
-		productoB=new Producto();
-		productoC=new Producto();
-		
-		
-		productoA.setNombre("Parasetamol");
-		productoA.setDescripcion("Patillas para tratar dolores");
-		productoA.setStockActual(15);
-		productoA.setPrecio(1.50);
-		
-		productoB.setNombre("Buprex");
-		productoB.setDescripcion("Patillas para dolor de cabeza");
-		productoB.setStockActual(10);
-		productoB.setPrecio(2.50);
-		
-		productoC.setNombre("Pedialite");
-		productoC.setDescripcion("Bebida hidratante");
-		productoC.setStockActual(17);
-		productoC.setPrecio(1.75);
+		productoA=new Producto("Parasetamol","Pastillas para tratar dolores",1.50,12);
+		productoB=new Producto("Buprex","Pastillas para tratar dolores",2.50,10);
+		productoC=new Producto("Pedialite","Bebida hidratante",1.75,14);
 		
 		System.out.println("Nombre:"+productoA.getNombre());
 		System.out.println("Descripcion:"+productoA.getDescripcion());
