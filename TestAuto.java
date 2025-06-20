@@ -3,27 +3,23 @@ package com.progra;
 public class TestAuto {
 
 	public static void main(String[] args) {
-		Auto auto1;
-		Auto auto2;
+		Auto auto1=new Auto();
+		Auto auto2=new Auto();
 		
-		auto1= new Auto();
-		auto2=new Auto();
+		auto1.setAnio(2001);
+		auto1.setMarca("Ford");
+		auto1.setPrecio(15000);
 		
-		auto1.marca="Nissan";
-		auto1.anio=2015;
-		auto1.precio=15000;
+		auto2.setAnio(2014);
+		auto2.setMarca("Chevorlet");
+		auto2.setPrecio(18000);
 		
-		auto2.marca="Suzuki";
-		auto2.anio=2025;
-		auto2.precio=28000;
+		System.out.println("Marca:"+auto1.getMarca());
+		System.out.println("Anio:"+auto1.getAnio());
+		System.out.println("Precio:"+auto1.getPrecio());
 		
-		System.out.println("Marca:"+ auto1.marca);
-		System.out.println("Precio:"+ auto1.anio);
-		System.out.println("Precio:"+auto1.precio);
-		System.out.println("------------------");
-		System.out.println("Marca:"+ auto2.marca);
-		System.out.println("Precio:"+ auto2.anio);
-		System.out.println("Precio:"+auto2.precio);
+		System.out.println("Marca:"+auto2.getMarca());
+		System.out.println("Anio:"+auto2.getAnio());
+		System.out.println("Precio:"+auto2.getPrecio());
+		}	
 	}
-
-}

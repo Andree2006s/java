@@ -5,6 +5,7 @@ public class TestCalculadora {
 	public static void main(String[] args) {
 		Calculadora calcu;
 		calcu=new Calculadora();
+		
 		int resultSuma=calcu.sumar(5, 3);
 		int resultResta=calcu.restar(10,3);
 		double resultadoMulti=calcu.multi(10,5);
